@@ -1,0 +1,21 @@
+.upvoteButton {
+  background-color: #f4f6f8;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upvoteButtonSelected {
+  background-color: #e5e8fd;
+}
+
+.upvoteImage {
+  width: 20px;
+  height: 20px;
+}
