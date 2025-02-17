@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Upvote List React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a technical assessment project built with React and TypeScript using Vite. The app features multiple lists of upvote components, each with toggleable selection states, and allows adding new upvote items. All states are managed globally with React Context and persisted in the browser using `localStorage`.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Features**
+- Built with **React + TypeScript** using **Vite**.
+- **Reusable components**:
+  - Upvote component with two states (default and selected).
+  - Upvote list component that manages a list of upvotes independently.
+- **Toggle selection state** for all upvote components in a list with a single click.
+- **Add new upvotes** dynamically to any list.
+- **React Context API** for global state management.
+- **Persisted state in localStorage** to maintain selections across page reloads.
+- **Consistent code style**, structured architecture, and clean code practices.
+- **Unit test** with Jest and React Testing Library for upvote state toggle.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🛠 **Technologies Used**
+- **React 19** with TypeScript
+- **Vite** for fast build and development
+- **React Context API** for state management
+- **localStorage API** for state persistence
+- **CSS Modules** for scoped and modular styling
+- **Jest** and **React Testing Library** for testing
